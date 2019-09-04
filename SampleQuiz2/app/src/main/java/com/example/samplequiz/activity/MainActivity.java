@@ -1,10 +1,12 @@
-package com.example.samplequiz;
+package com.example.samplequiz.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.widget.FrameLayout;
+
+import com.example.samplequiz.fragment.QuizFragment;
+import com.example.samplequiz.R;
 
 public class MainActivity extends AppCompatActivity {
 

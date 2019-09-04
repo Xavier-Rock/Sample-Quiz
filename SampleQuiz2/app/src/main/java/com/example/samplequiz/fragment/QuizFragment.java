@@ -1,4 +1,4 @@
-package com.example.samplequiz;
+package com.example.samplequiz.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.samplequiz.R;
 
 public class QuizFragment extends Fragment {
 
@@ -25,12 +27,7 @@ public class QuizFragment extends Fragment {
 
     private void initView(View view) {
         mStartQuizTv = view.findViewById(R.id.start_quiz_tv);
-        mStartQuizTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startQuiz();
-            }
-        });
+        mStartQuizTv.setOnClickListener(v -> startQuiz());
     }
 
     private void startQuiz() {

@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "Q 1 - How to get a response from an activity in Android?",
+      "question": "How to get a response from an activity in Android?",
       "options": [
         "startActivityToResult",
         "startActivityForResult",
@@ -11,7 +11,7 @@
       "answer": "startActivityForResult"
     },
     {
-      "question": "Q 2 - What is splash screen in android?",
+      "question": "What is splash screen in android?",
       "options": [
         "initial activity of an application",
         "initial service of an applicaion",
@@ -21,7 +21,7 @@
       "answer": "initial screen of an applicaion"
     },
     {
-      "question": "Q 3 -How to stop the services in android?",
+      "question": "How to stop the services in android?",
       "options": [
         "finish()",
         "system.exit()",
@@ -31,7 +31,7 @@
       "answer": "stopSelf and stopService()"
     },
     {
-      "question": "Q 4 - How many applications are there in a given task in android?",
+      "question": "How many applications are there in a given task in android?",
       "options": [
         "Two",
         "One",
@@ -41,7 +41,7 @@
       "answer": "Many"
     },
     {
-      "question": "Q 5 -Which permissions are required to get a location in android?",
+      "question": "Which permissions are required to get a location in android?",
       "options": [
         "ACCESS_FINE and ACCESS_COARSE",
         "GPRS",
@@ -51,7 +51,7 @@
       "answer": "ACCESS_FINE and ACCESS_COARSE"
     },
     {
-      "question": "Q 6 - What is breakpoint in android?",
+      "question": "What is breakpoint in android?",
       "options": [
         "Breaks the applicaion",
         "Breaks the development code",
