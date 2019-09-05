@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "How to get a response from an activity in Android?",
+      "options": [
+        "startActivityToResult",
+        "startActivityForResult",
+        "Bundle",
+        "none of the above"
+      ],
+      "answer": "startActivityForResult"
+    },
+    {
+      "question": "What is splash screen in android?",
+      "options": [
+        "initial activity of an application",
+        "initial service of an applicaion",
+        "initial method of an application",
+        "initial screen of an applicaion"
+      ],
+      "answer": "initial screen of an applicaion"
+    },
+    {
+      "question": "How to stop the services in android?",
+      "options": [
+        "finish()",
+        "system.exit()",
+        "by manually",
+        "stopSelf and stopService()"
+      ],
+      "answer": "stopSelf and stopService()"
+    },
+    {
+      "question": "How many applications are there in a given task in android?",
+      "options": [
+        "Two",
+        "One",
+        "Many",
+        "Zero"
+      ],
+      "answer": "Many"
+    },
+    {
+      "question": "Which permissions are required to get a location in android?",
+      "options": [
+        "ACCESS_FINE and ACCESS_COARSE",
+        "GPRS",
+        "Internet permisson",
+        "WIFI permission"
+      ],
+      "answer": "ACCESS_FINE and ACCESS_COARSE"
+    },
+    {
+      "question": "What is breakpoint in android?",
+      "options": [
+        "Breaks the applicaion",
+        "Breaks the development code",
+        "Break the execution",
+        "None of the above"
+      ],
+      "answer": "Break the execution"
+    },
+    {
+      "question": "In which technique, we can refresh the dynamic content in android?",
+      "options": [
+        "Java",
+        "Ajax",
+        "Android",
+        "None of the above"
+      ],
+      "answer": "Ajax"
+    },
+    {
+      "question": "What is fragment life cycle in android?",
+      "options": [
+        "onReceive()",
+        "onCreate()",
+        "onAttach() -> OnCreate() -> onCreateView() -> onActivityCreated() -> onStart() -> onResume() -> onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()",
+        "None of the above"
+      ],
+      "answer": "onAttach() -> OnCreate() -> onCreateView() -> onActivityCreated() -> onStart() -> onResume() -> onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()"
+    },
+    {
+      "question": "What is ANR responding time in android?",
+      "options": [
+        "10 sec",
+        "5 sec",
+        "1 min",
+        "None of the above"
+      ],
+      "answer": "5 sec"
+    },
+    {
+      "question": "What is a thread in android?",
+      "options": [
+        "Same as Services",
+        "Background activity",
+        "Broadcast Receiver",
+        "inependent dis-patchable unit is called a thread"
+      ],
+      "answer": "inependent dis-patchable unit is called a thread"
+    }
+  ]
+}
