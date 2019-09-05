@@ -59,6 +59,46 @@
         "None of the above"
       ],
       "answer": "Break the execution"
+    },
+    {
+      "question": "In which technique, we can refresh the dynamic content in android?",
+      "options": [
+        "Java",
+        "Ajax",
+        "Android",
+        "None of the above"
+      ],
+      "answer": "Ajax"
+    },
+    {
+      "question": "What is fragment life cycle in android?",
+      "options": [
+        "onReceive()",
+        "onCreate()",
+        "onAttach() -> OnCreate() -> onCreateView() -> onActivityCreated() -> onStart() -> onResume() -> onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()",
+        "None of the above"
+      ],
+      "answer": "onAttach() -> OnCreate() -> onCreateView() -> onActivityCreated() -> onStart() -> onResume() -> onPause() -> onStop() -> onDestroyView() -> onDestroy() -> onDetach()"
+    },
+    {
+      "question": "What is ANR responding time in android?",
+      "options": [
+        "10 sec",
+        "5 sec",
+        "1 min",
+        "None of the above"
+      ],
+      "answer": "5 sec"
+    },
+    {
+      "question": "What is a thread in android?",
+      "options": [
+        "Same as Services",
+        "Background activity",
+        "Broadcast Receiver",
+        "inependent dis-patchable unit is called a thread"
+      ],
+      "answer": "inependent dis-patchable unit is called a thread"
     }
   ]
 }

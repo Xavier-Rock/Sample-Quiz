@@ -56,6 +56,11 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.Ques
     }
 
     @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
+    @Override
     public int getItemCount() {
         if(mQuestions != null && mQuestions.size()>0) {
             return mQuestions.size();

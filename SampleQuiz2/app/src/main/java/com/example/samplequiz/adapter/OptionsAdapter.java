@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public class OptionsAdapter extends RecyclerView.Adapter<OptionsAdapter.OptionsVH> {
 
     private ArrayList<String> mOptions;
+    private int mPreSelectedPosition = -5;
     private OptionsVH mPreViewHolder = null;
     private int mQuestionPosition;
     private Delegate mDelegate;
@@ -45,21 +46,29 @@ public class OptionsAdapter extends RecyclerView.Adapter<OptionsAdapter.OptionsV
     public void onBindViewHolder(@NonNull OptionsVH holder, int position) {
         if(mOptions != null && mOptions.size() > position && !TextUtils.isEmpty(mOptions.get(0))){
             holder.mOptionsTv.setText(mOptions.get(position));
-            holder.mOptionRb.setOnClickListener(v -> onClickRadioButton(mOptions.get(position), holder));
+            holder.mOptionRb.setOnClickListener(v -> onClickRadioButton(position, mOptions.get(position), holder));
         } else {
             holder.mOptionLyt.setVisibility(View.GONE);
         }
 
     }
 
-    private void onClickRadioButton(String answer, OptionsVH holder) {
+    private void onClickRadioButton(int position, String answer, OptionsVH holder) {
         if(mPreViewHolder == null){
+            mPreSelectedPosition = position;
             mPreViewHolder = holder;
         } else {
+            if(mPreSelectedPosition == position) return;
+            mPreSelectedPosition = position;
             mPreViewHolder.mOptionRb.setChecked(false);
             mPreViewHolder = holder;
         }
         mDelegate.onClickOfOptions(mQuestionPosition, answer);
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
     }
 
     @Override

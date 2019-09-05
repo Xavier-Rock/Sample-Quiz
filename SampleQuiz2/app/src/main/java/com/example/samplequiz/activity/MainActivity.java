@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.example.samplequiz.fragment.QuizFragment;
 import com.example.samplequiz.R;
+import com.example.samplequiz.fragment.QuizSuccessFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,5 +27,18 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.addToBackStack(quizFragment.getClass().getSimpleName());
         fragmentTransaction.commitAllowingStateLoss();
         fragmentTransaction.setCustomAnimations(0, 0, 0, 0);
+    }
+
+    @Override
+    public void onBackPressed() {
+        androidx.fragment.app.FragmentManager supportFragmentManager = getSupportFragmentManager();
+        androidx.fragment.app.Fragment currentFragment = supportFragmentManager.findFragmentById(R.id.fragment_container);
+        if(currentFragment instanceof QuizFragment){
+            this.finish();
+        }
+        if(currentFragment instanceof QuizSuccessFragment){
+            supportFragmentManager.popBackStack();
+        }
+        supportFragmentManager.popBackStack();
     }
 }
